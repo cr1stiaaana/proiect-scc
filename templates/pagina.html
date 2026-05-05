@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titlu }}</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #E6F2FF;
+            color: #000000;
+        }
+        .navbar {
+            background-color: #B3D9FF;
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .navbar a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .back-button {
+            margin-top: 30px;
+        }
+        .back-button a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #99CCFF;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .back-button a:hover {
+            background-color: #66B3FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Acasă</a>
+        <a href="/capitala">Capitala</a>
+        <a href="/steag">Steag</a>
+        <a href="/populatie">Populație</a>
+    </div>
+    <div class="content">
+        <h1>{{ header }}</h1>
+        <p>{{ continut }}</p>
+        <div class="back-button">
+            <a href="/">Înapoi la pagina principală</a>
+        </div>
+    </div>
+</body>
+</html>
