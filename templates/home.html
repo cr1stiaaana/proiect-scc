@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Proiect SCC - Țări{% endblock %}
+
+{% block extra_css %}
+.content {
+    text-align: center;
+}
+.tari-lista {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.tara-card {
+    background-color: #FF5C77;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.tara-card:hover {
+    background-color: #FF7A8F;
+}
+.tara-card a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+{% endblock %}
+
+{% block content %}
+<h1>Proiect SCC - Țări</h1>
+<h2 style="font-size: 24px; color: #333;">Selectează o țară pentru a vedea detalii</h2>
+<div class="tari-lista">
+    <div class="tara-card">
+        <a href="/coreea-de-sud">Coreea de Sud</a>
+    </div>
+
+    
+    <div class="tara-card">
+        <a href="/belgia">Belgia</a>
+    </div>
+
+    <!-- <div class="tara-card">
+        <a href="/<NUME-TARA>>">NUME TARA</a> -- aici se modifica numai nume-tara
+    </div> -->
+
+</div>
+{% endblock %}

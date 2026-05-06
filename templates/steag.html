@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Steag{% endblock %}
+
+{% block navbar %}
+<a href="/{{ tara_url.split('/')[1] }}">Acasă</a>
+<a href="{{ tara_url }}/capitala">Capitala</a>
+<a href="{{ tara_url }}/steag">Steag</a>
+<a href="{{ tara_url }}/populatie">Populație</a>
+{% endblock %}
+
+{% block content %}
+<h2>{{ header }}</h2>
+<p>{{ continut | safe }}</p>
+<div class="back-button">
+    <a href="{{ tara_url }}">Inapoi la tara mea</a>
+</div>
+{% endblock %}
