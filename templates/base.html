@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Proiect SCC - Țări{% endblock %}</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #EFD1E2;
+            color: #000000;
+        }
+        .navbar {
+            background-color: #FF5C77;
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .navbar a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .buttons a, .back-button a {
+            color: #000000;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #FF5C77;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        .buttons a:hover, .back-button a:hover {
+            background-color: #FF7A8F;
+        }
+        img {
+            border: 3px solid #000000;
+            margin: 20px 0;
+            max-width: 50%;
+            height: auto;
+        }
+        {% block extra_css %}{% endblock %}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        {% block navbar %}
+        <a href="/">Acasă</a>
+        {% endblock %}
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
