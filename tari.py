@@ -1,11 +1,11 @@
 from flask import Flask, render_template, abort
 
 # se va da import la fiecare biblioteca a tarii
-#from app.lib import biblioteca_tara as <tara>
+#from app.lib import biblioteca_tara as <tara> as <nume-tara SAU prescurtare>
 
 
 from app.lib import biblioteca_coreea as sk
-from app.lib import biblioteca_belgia as belgia
+
 
 '''NU SE MODIFICA'''
 from app.lib import biblioteca_header as header
@@ -14,8 +14,7 @@ from app.lib.biblioteca_tari import TARI, TEMPLATE_TARA
 # Mapare tara -> biblioteca
 BIBLIOTECI = {
     'coreea-de-sud': sk,
-    'belgia': belgia,
-    #adauga tara> 'tara': tara
+     #adauga tara> 'tara': tara
 }
 
 print('Proiect SCC - Tari')
